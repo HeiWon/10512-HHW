@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <div id="rand-val">랜덤 값을 만들어봅시다.</div>
+    <button onclick="inner()">생성하기</button>
+</body>
+    <script type="text/javascript">
+        function inner() {
+            const randNode = document.getElemantById("rand-val");
+            randNode.innerHTML = "<p style='color: red'>" + Math.random() + "</p>";
+        }
+    </script>
+</html>
